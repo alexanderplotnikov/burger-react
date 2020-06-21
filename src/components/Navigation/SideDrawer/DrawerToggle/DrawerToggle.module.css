@@ -1,0 +1,16 @@
+.DrawerToggle {
+  display: flex;
+  align-items: center;
+}
+
+.DrawerToggle img {
+  height: 40px;
+  filter: invert(77%) sepia(12%) saturate(3928%) hue-rotate(338deg)
+    brightness(86%) contrast(86%);
+}
+
+@media (min-width: 500px) {
+  .DrawerToggle {
+    display: none;
+  }
+}
