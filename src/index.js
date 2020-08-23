@@ -6,13 +6,15 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
+import reducer from './store/reducer';
 
 const rootReducer = combineReducers({
   //reducer 1
   //reducer 2
+  ings: reducer,
 });
 
-const store = createStore(rootReducer);
+const store = createStore(reducer);
 
 const app = (
   <Provider store={store}>
