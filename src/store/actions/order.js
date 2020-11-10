@@ -50,7 +50,7 @@ export const fetchOrderStart = () => {
 };
 export const fetchOrders = (token, userId) => {
   return {
-    type: actionTypes.FETCH_ORDER,
+    type: actionTypes.FETCH_ORDERS,
     token,
     userId,
   };
