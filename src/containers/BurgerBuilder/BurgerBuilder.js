@@ -34,7 +34,7 @@ const BurgerBuilder = (props) => {
     dispatch(actions.setAuthRedirectPath(path));
 
   useEffect(() => {
-    // onInitIngredients();
+    onInitIngredients();
   }, [onInitIngredients]);
 
   const updatePurchaseState = (ingredients) => {
